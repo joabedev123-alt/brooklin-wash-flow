@@ -8,7 +8,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
-              Você cuida do seu tempo. A gente cuida das suas roupas.
+              Você cuida do seu tempo A gente cuida das suas roupas.
             </h1>
             <p className="text-lg md:text-xl text-secondary/80 mb-8 leading-relaxed">
               Seu tempo é valioso. Por isso, fazemos o trabalho pesado por você
