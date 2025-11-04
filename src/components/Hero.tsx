@@ -8,10 +8,10 @@ const Hero = () => {
           {/* Text Content */}
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
-              A sua lavanderia delivery por assinatura
+              Você cuida do seu tempo. A gente cuida das suas roupas.
             </h1>
             <p className="text-lg md:text-xl text-secondary/80 mb-8 leading-relaxed">
-              Suas roupas limpas, passadas e organizadas, toda semana, na porta da sua casa.
+              Seu tempo é valioso. Por isso, fazemos o trabalho pesado por você
             </p>
           </div>
 
