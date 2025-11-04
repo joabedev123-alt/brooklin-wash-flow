@@ -45,7 +45,7 @@ const FAQ = () => {
     <section id="faq" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Dúvidas Frequentes
           </h2>
         </div>
@@ -58,7 +58,7 @@ const FAQ = () => {
                 value={`item-${index}`}
                 className="bg-card border border-border rounded-xl px-6 shadow-sm hover:shadow-md transition-all"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold text-secondary hover:text-primary hover:no-underline py-6">
+                <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:text-primary hover:no-underline py-6">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">

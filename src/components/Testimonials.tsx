@@ -34,7 +34,7 @@ const Testimonials = () => {
     <section id="depoimentos" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Saiba mais com quem já usa a Brooklin Lavanderia
           </h2>
         </div>
@@ -54,7 +54,7 @@ const Testimonials = () => {
                     <CardContent className="p-8 flex flex-col h-full">
                       <div className="flex gap-1 mb-4">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                          <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
                         ))}
                       </div>
                       
@@ -63,7 +63,7 @@ const Testimonials = () => {
                       </p>
                       
                       <div className="border-t border-border pt-4">
-                        <p className="font-semibold text-secondary">{testimonial.name}</p>
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                       </div>
                     </CardContent>

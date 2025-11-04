@@ -28,7 +28,7 @@ const HowItWorks = () => {
     <section id="como-funciona" className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-secondary">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground">
             Veja como é fácil deixar suas peças limpas e prontas para uso
           </h2>
         </div>
@@ -40,10 +40,10 @@ const HowItWorks = () => {
               className="flex flex-col items-center text-center animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-md transition transform hover:scale-105 hover:shadow-lg bg-primary">
-                <step.icon className="w-8 h-8 text-white stroke-[1.8]" />
+              <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-105 hover:shadow-xl bg-secondary">
+                <step.icon className="w-8 h-8 text-secondary-foreground stroke-[1.8]" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-secondary">
+              <h3 className="mt-5 text-lg font-semibold text-foreground">
                 {step.title}
               </h3>
               <p className="mt-2 leading-relaxed text-[15px] text-muted-foreground">

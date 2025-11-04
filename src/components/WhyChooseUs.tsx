@@ -26,15 +26,16 @@ const reasons = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 md:py-28 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
-            Quatro motivos para você escolher a Brooklin Lavanderia 😉
+    <section className="py-12 md:py-20 lg:py-28 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 md:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 px-2">
+            Quatro motivos para você<br />
+            escolher a Brooklin Lavanderia 😉
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6 max-w-6xl mx-auto">
           {reasons.map((reason, index) => (
             <Card
               key={index}
@@ -44,12 +45,12 @@ const WhyChooseUs = () => {
               <CardContent className="p-8">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary">
-                      <reason.icon className="w-8 h-8 text-secondary" />
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary shadow-lg">
+                      <reason.icon className="w-8 h-8 text-secondary-foreground" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-secondary mb-3">
+                    <h3 className="text-xl font-semibold text-foreground mb-3">
                       {reason.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">

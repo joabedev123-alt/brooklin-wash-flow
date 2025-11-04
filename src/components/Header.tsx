@@ -19,55 +19,66 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src={logo} alt="Lavanderia Brooklin" className="h-12 w-auto" />
+          <div className="flex items-center gap-2 sm:gap-3">
+            <img src={logo} alt="Lavanderia Brooklin" className="h-10 sm:h-12 w-auto" />
+            <span className="hidden sm:inline text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-foreground via-secondary to-primary-foreground bg-clip-text text-transparent hover:from-secondary hover:via-primary hover:to-secondary transition-all duration-500">
+              Lavanderia Brooklin
+            </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("como-funciona")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium relative group"
             >
               Como Funciona
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection("planos")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium relative group"
             >
               Planos
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium relative group"
             >
               Depoimentos
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium relative group"
             >
               FAQ
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium relative group"
             >
               Contato
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
           </nav>
 
-          {/* Action Buttons */}
-          <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-primary">
-              Cadastrar
+          {/* Action Button */}
+          <div className="hidden md:flex items-center">
+            <Button 
+              onClick={() => window.open("https://wa.me/551155314546", "_blank")}
+              variant="outline" 
+              className="border-primary-foreground bg-background text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+            >
+              fale conosco
             </Button>
-            <Button variant="secondary">Entrar</Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-secondary"
+            className="md:hidden text-primary-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <Menu size={28} />
@@ -76,42 +87,45 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-secondary/20 pt-4">
+          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 border-t border-primary-foreground/20 pt-4">
             <button
               onClick={() => scrollToSection("como-funciona")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium text-left"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium text-left"
             >
               Como Funciona
             </button>
             <button
               onClick={() => scrollToSection("planos")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium text-left"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium text-left"
             >
               Planos
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium text-left"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium text-left"
             >
               Depoimentos
             </button>
             <button
               onClick={() => scrollToSection("faq")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium text-left"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium text-left"
             >
               FAQ
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-secondary hover:text-secondary/80 transition-colors font-medium text-left"
+              className="text-primary-foreground hover:text-secondary transition-all duration-300 font-medium text-left"
             >
               Contato
             </button>
             <div className="flex flex-col gap-2 mt-2">
-              <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-primary w-full">
-                Cadastrar
+              <Button 
+                onClick={() => window.open("https://wa.me/551155314546", "_blank")}
+                variant="outline" 
+                className="border-primary-foreground bg-background text-primary-foreground hover:bg-primary-foreground hover:text-primary w-full"
+              >
+                fale conosco
               </Button>
-              <Button variant="secondary" className="w-full">Entrar</Button>
             </div>
           </nav>
         )}
