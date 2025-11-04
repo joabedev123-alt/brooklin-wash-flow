@@ -2,54 +2,54 @@ import { Calendar, CreditCard, Shirt, Truck } from "lucide-react";
 
 const steps = [
   {
+    icon: Shirt,
+    title: "Escolha o que deseja lavar",
+    description: "Roupas do dia a dia, sapatos, edredons, cortinas, ternos e muito mais. Nós aplicamos o tratamento ideal para cada tipo de peça.",
+  },
+  {
     icon: Calendar,
-    title: "Escolha o seu plano mensal",
-    description: "Escolha o plano ideal para você, com certeza uma opção se ajusta à sua rotina.",
+    title: "Escolha o plano ideal",
+    description: "Selecione o plano que combina com sua rotina — residencial, comercial ou express. Flexível, prático e sob medida para você.",
   },
   {
     icon: CreditCard,
-    title: "Realize o pagamento e agendamento",
-    description: "Agende o dia e forma de pagamento pelo site ou aplicativo — sem necessidade de contato.",
-  },
-  {
-    icon: Shirt,
-    title: "Comece a separar suas roupas sujas",
-    description: "Coloque as peças em sacos separados por cor ou tipo de roupa, sem complicação.",
+    title: "Agende e realize o pagamento",
+    description: "Escolha o melhor dia e horário pelo site ou WhatsApp e pague online, sem complicação. A coleta é rápida e segura.",
   },
   {
     icon: Truck,
-    title: "Receba as roupas em sua casa",
-    description: "Suas roupas limpas, passadas e organizadas, no conforto da sua casa.",
+    title: "Receba tudo de volta, limpo e cheiroso",
+    description: "Suas roupas, sapatos e tecidos são lavados, passados e entregues na sua casa com o padrão de qualidade Brooklin.",
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="como-funciona" className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
-            Veja como é fácil ter suas roupas lavadas e passadas
+    <section id="como-funciona" className="py-16 bg-background">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-secondary">
+            Veja como é fácil deixar suas peças limpas e prontas para uso
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {steps.map((step, index) => (
-            <div
+            <article
               key={index}
-              className="animate-slide-up text-center"
+              className="flex flex-col items-center text-center animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary mb-6 shadow-lg">
-                <step.icon className="w-10 h-10 text-secondary" />
+              <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-md transition transform hover:scale-105 hover:shadow-lg bg-primary">
+                <step.icon className="w-8 h-8 text-white stroke-[1.8]" />
               </div>
-              <h3 className="text-xl font-semibold text-secondary mb-3">
+              <h3 className="mt-5 text-lg font-semibold text-secondary">
                 {step.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="mt-2 leading-relaxed text-[15px] text-muted-foreground">
                 {step.description}
               </p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
