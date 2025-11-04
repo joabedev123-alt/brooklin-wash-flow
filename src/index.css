@@ -9,47 +9,49 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Brooklin Lavanderia Brand Colors */
+    /* Branco: #ffffff, Laranja: #fd8f51, Azul: #3ea0cf, Azul Claro: #5de1e6 */
     --background: 0 0% 100%;
-    --foreground: 0 0% 7%;
+    --foreground: 199 57% 20%;
     
-    /* Primary: Amarelo Brooklin (#FFCC00) */
-    --primary: 48 100% 50%;
-    --primary-foreground: 0 0% 7%;
+    /* Primary: Azul (#3ea0cf) */
+    --primary: 199 57% 53%;
+    --primary-foreground: 0 0% 100%;
     
-    /* Secondary: Preto (#111111) */
-    --secondary: 0 0% 7%;
+    /* Secondary: Laranja (#fd8f51) */
+    --secondary: 22 98% 65%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Accent variations */
-    --accent: 48 100% 50%;
-    --accent-foreground: 0 0% 7%;
+    /* Accent: Azul Claro (#5de1e6) */
+    --accent: 183 74% 63%;
+    --accent-foreground: 199 57% 20%;
     
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 7%;
+    --card-foreground: 199 57% 20%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 7%;
+    --popover-foreground: 199 57% 20%;
     
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 199 20% 96%;
+    --muted-foreground: 199 20% 40%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 48 100% 50%;
+    --border: 199 20% 90%;
+    --input: 199 20% 90%;
+    --ring: 199 57% 53%;
     
     --radius: 1rem;
     
     /* Custom Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(48 100% 50%) 0%, hsl(45 100% 45%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(48 100% 50%) 0%, hsl(48 100% 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(199 57% 53%) 0%, hsl(199 57% 45%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(199 57% 53%) 0%, hsl(183 74% 63%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(22 98% 65%) 0%, hsl(22 98% 55%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
-    --shadow-strong: 0 12px 40px rgba(0, 0, 0, 0.15);
+    --shadow-soft: 0 4px 20px rgba(62, 160, 207, 0.12);
+    --shadow-medium: 0 8px 30px rgba(62, 160, 207, 0.18);
+    --shadow-strong: 0 12px 40px rgba(62, 160, 207, 0.22);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
