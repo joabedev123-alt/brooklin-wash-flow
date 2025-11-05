@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import sapatoImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 12_43_51.png";
 import camaBanhoImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 12_41_56.png";
 import cortinasImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 13_29_07.png";
@@ -11,46 +9,6 @@ import uniformesImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 14_21_59.p
 import petImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 14_26_00.png";
 import blackoutImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 14_30_11.png";
 import blackoutImage2 from "@/assets/imagens/aae5e18f-c585-4780-bf51-4e9f6869dfa7.png";
-
-const plans = [
-  {
-    name: "Plano 200",
-    price: "R$ 200,00",
-    kg: "15 kg",
-    collections: "2 coletas por mês",
-    features: [
-      "Convênio Residual: +R$15",
-      "Comercial: +R$25",
-      "Indicado para quem lava semanalmente até 7,5 kg",
-      "Validade de crédito: 60 dias",
-    ],
-  },
-  {
-    name: "Plano 600",
-    price: "R$ 600,00",
-    kg: "45 kg",
-    collections: "6 coletas por mês",
-    features: [
-      "Convênio Residual: +R$15",
-      "Comercial: +R$25",
-      "Ideal para famílias ou pequenas empresas",
-      "Validade de crédito: 60 dias",
-    ],
-    popular: true,
-  },
-  {
-    name: "Plano 900",
-    price: "R$ 900,00",
-    kg: "75 kg",
-    collections: "10 coletas por mês",
-    features: [
-      "Convênio Residual: +R$15",
-      "Comercial: +R$25",
-      "Atende grandes famílias e uso empresarial",
-      "Validade de crédito: 60 dias",
-    ],
-  },
-];
 
 const services = [
   {
@@ -174,68 +132,128 @@ const Plans = () => {
           </div>
         </div>
 
-        {/* Seção de Planos */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Conheça nossos planos
-          </h2>
-        </div>
+        {/* Seção Lave e Seque suas roupas */}
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text text-transparent mb-4">
+              Tenha seu tempo livre Lave e Seque suas roupas Conosco !
+            </h2>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {plans.slice(1).map((plan, index) => (
-            <Card
-              key={index}
-              className={`animate-slide-up relative border-2 ${
-                plan.popular
-                  ? "border-primary shadow-2xl scale-105"
-                  : "border-border shadow-lg"
-              } hover:shadow-xl transition-all duration-300`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-secondary text-secondary-foreground px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    Mais Popular
-                  </span>
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
+            {/* Espaço para Imagem */}
+            <div className="animate-scale-in order-2 md:order-1">
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-secondary/20">
+                <div className="aspect-square flex items-center justify-center bg-gradient-to-br from-secondary/30 to-secondary/10">
+                  <p className="text-muted-foreground text-center px-4">
+                    📷 Imagem será exibida aqui
+                  </p>
+                  {/* Quando você tiver a imagem, substitua o placeholder acima por:
+                  <img 
+                    src={suaImagem} 
+                    alt="Lave e Seque suas roupas" 
+                    className="w-full h-full object-cover"
+                  />
+                  */}
                 </div>
-              )}
+              </div>
+            </div>
 
-              <CardHeader className="text-center pb-8 pt-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-4 mx-auto shadow-lg">
-                  <span className="text-3xl">🧺</span>
-                </div>
-                <CardTitle className="text-2xl font-bold text-foreground mb-2">
-                  {plan.name}
-                </CardTitle>
-                <div className="text-4xl font-bold text-primary mb-2">
-                  {plan.price}
-                </div>
-                <p className="text-muted-foreground">/ mês</p>
-              </CardHeader>
+            {/* Conteúdo de Informações */}
+            <div className="animate-fade-in order-1 md:order-2 space-y-4">
+              <Card className="border-none shadow-lg bg-secondary/50">
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">🧺</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Limite da máquina em média de até 20 a 30 peças.
+                        </p>
+                      </div>
+                    </div>
 
-              <CardContent className="space-y-6">
-                <div className="text-center py-4 bg-secondary/10 rounded-lg border-2 border-secondary/20">
-                  <p className="text-2xl font-bold text-foreground">{plan.kg}</p>
-                  <p className="text-sm text-muted-foreground">{plan.collections}</p>
-                </div>
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">💲</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Valores: 72,00 reais o cesto (Lavar e Seca)
+                        </p>
+                      </div>
+                    </div>
 
-                <ul className="space-y-3">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-foreground flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">💧</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Máquinas de alta tecnologia que não encolhem as roupas.
+                        </p>
+                      </div>
+                    </div>
 
-                <Button
-                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-6 text-lg shadow-lg"
-                >
-                  Eu quero
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">🫧</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Produtos hipoalergênicos e que não danificam as roupas.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">💦</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Máquinas higienizadas a cada ciclo.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">⏰</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Roupas prontas em 70 minutos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">😀</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Um preço justo para quem precisa de tempo livre !
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <span className="text-2xl">🚗</span>
+                      <div>
+                        <p className="text-lg font-semibold text-foreground">
+                          Delivery Grátis por agendamento
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Observações */}
+              <Card className="border-none shadow-lg bg-muted/50">
+                <CardContent className="p-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                      Observações:
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Nossos colaboradores estão habilitados e treinados em calcular peso, limite de roupas e tecidos que se enquadram no processo e no ciclo da máquina.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
