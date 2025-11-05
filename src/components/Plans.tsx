@@ -141,9 +141,9 @@ const Plans = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mb-12">
             {/* Espaço para Imagem */}
-            <div className="animate-scale-in order-2 md:order-1">
+            <div className="animate-scale-in order-2 md:order-1 pt-4 md:pt-6">
               <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-secondary/20">
                 <div className="aspect-square">
                   <img 
@@ -161,72 +161,72 @@ const Plans = () => {
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">🧺</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">🧺</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Limite da máquina em média de até 20 a 30 peças.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">💲</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">💲</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Valores: 72,00 reais o cesto (Lavar e Seca)
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">💧</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">💧</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Máquinas de alta tecnologia que não encolhem as roupas.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">🫧</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">🫧</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Produtos hipoalergênicos e que não danificam as roupas.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">💦</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">💦</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Máquinas higienizadas a cada ciclo.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">⏰</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">⏰</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Roupas prontas em 70 minutos.
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">😀</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">😀</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Um preço justo para quem precisa de tempo livre !
                         </p>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl flex-shrink-0 w-8 text-center">🚗</span>
+                      <span className="text-xl flex-shrink-0 w-7 text-center">🚗</span>
                       <div className="flex-1">
-                        <p className="text-lg font-semibold text-foreground">
+                        <p className="text-base font-semibold text-foreground">
                           Delivery Grátis por agendamento
                         </p>
                       </div>
@@ -239,10 +239,10 @@ const Plans = () => {
               <Card className="border-none shadow-lg bg-muted/50">
                 <CardContent className="p-6">
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-3">
+                    <h3 className="text-base font-semibold text-foreground mb-3">
                       Observações:
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       Nossos colaboradores estão habilitados e treinados em calcular peso, limite de roupas e tecidos que se enquadram no processo e no ciclo da máquina.
                     </p>
                   </div>
