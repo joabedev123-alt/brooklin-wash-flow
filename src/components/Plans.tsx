@@ -94,66 +94,6 @@ const Plans = () => {
           </h2>
         </div>
 
-        {/* Seção O que lavamos - Cards */}
-        <div className="max-w-6xl mx-auto mb-12 md:mb-20 px-2 sm:px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
-            {/* Card 1: Para você */}
-            <Card className="border-none shadow-lg bg-secondary/50 hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Para você
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Roupas do dia a dia, Lavagem por Cestos; Auto Serviço, Vestidos, Ternos, Blazer, Jaquetas, Seda, Linho, Couro, Tênis e muito mais. Nós aplicamos o tratamento ideal para cada tipo de peça.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 2: Para sua casa */}
-            <Card className="border-none shadow-lg bg-secondary/50 hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Para sua casa
-                </h3>
-                <div className="space-y-3">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Lavamos Edredons, Cobertores, Colchas, Pillowtop, Coberdrom e Plumas de ganso.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Somos Especialistas em Tapetes, Cortinas, Sofás, Colchão.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Lavamos também carrinho de bebê, cadeirinha e pelúcias.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Lavamos cama PET.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card 3: Para sua empresa */}
-            <Card className="border-none shadow-lg bg-secondary/50 hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Para sua empresa
-                </h3>
-                <div className="space-y-3">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Lavamos todos os tipos de uniformes com preços diferenciados para empresas e clínicas.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Respeitamos a NR.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Emitimos Nota Fiscal e faturamos em boleto.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
         {/* Seção O que lavamos - Grade */}
         <div className="max-w-7xl mx-auto mb-12 md:mb-20 px-2 sm:px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8 items-start">

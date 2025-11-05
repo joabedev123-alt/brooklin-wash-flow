@@ -1,20 +1,21 @@
-import { Calendar, CreditCard, Shirt } from "lucide-react";
+import { User, Home, Building2 } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const steps = [
   {
-    icon: Shirt,
-    title: "Escolha o que deseja lavar",
-    description: "Roupas do dia a dia, sapatos, edredons, cortinas, ternos e muito mais. Nós aplicamos o tratamento ideal para cada tipo de peça.",
+    icon: User,
+    title: "Para você",
+    description: "Roupas do dia a dia, Lavagem por Cestos; Auto Serviço, Vestidos, Ternos, Blazer, Jaquetas, Seda, Linho, Couro, Tênis e muito mais. Nós aplicamos o tratamento ideal para cada tipo de peça.",
   },
   {
-    icon: Calendar,
-    title: "Escolha o plano ideal",
-    description: "Selecione o plano que combina com sua rotina — residencial, comercial ou express. Flexível, prático e sob medida para você.",
+    icon: Home,
+    title: "Para sua casa",
+    description: "Lavamos Edredons, Cobertores, Colchas, Pillowtop, Coberdrom e Plumas de ganso.\n\nSomos Especialistas em Tapetes, Cortinas, Sofás, Colchão.\n\nLavamos também carrinho de bebê, cadeirinha e pelúcias.\n\nLavamos cama PET.",
   },
   {
-    icon: CreditCard,
-    title: "Agende e realize o pagamento",
-    description: "Escolha o melhor dia e horário pelo site ou WhatsApp e pague online, sem complicação. A coleta é rápida e segura.",
+    icon: Building2,
+    title: "Para sua empresa",
+    description: "Lavamos todos os tipos de uniformes com preços diferenciados para empresas e clínicas.\n\nRespeitamos a NR.\n\nEmitimos Nota Fiscal e faturamos em boleto.",
   },
 ];
 
@@ -28,23 +29,27 @@ const HowItWorks = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {steps.map((step, index) => (
-            <article
+            <Card
               key={index}
-              className="flex flex-col items-center text-center animate-slide-up"
+              className="border-none shadow-lg bg-secondary/50 hover:shadow-xl transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-105 hover:shadow-xl bg-secondary">
-                <step.icon className="w-8 h-8 text-secondary-foreground stroke-[1.8]" />
-              </div>
-              <h3 className="mt-5 text-lg font-semibold text-foreground">
-                {step.title}
-              </h3>
-              <p className="mt-2 leading-relaxed text-[15px] text-muted-foreground">
-                {step.description}
-              </p>
-            </article>
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-105 hover:shadow-xl bg-primary mb-4">
+                    <step.icon className="w-8 h-8 text-primary-foreground stroke-[1.8]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                    {step.description}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
