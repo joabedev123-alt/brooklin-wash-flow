@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import laveSequeImage from "@/assets/WhatsApp Image 2025-11-04 at 18.32.26 (1).jpeg";
 import sapatoImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 12_43_51.png";
 import camaBanhoImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 12_41_56.png";
 import cortinasImage from "@/assets/imagens/ChatGPT Image 4_11_2025, 13_29_07.png";
@@ -144,17 +145,12 @@ const Plans = () => {
             {/* Espaço para Imagem */}
             <div className="animate-scale-in order-2 md:order-1">
               <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-secondary/20">
-                <div className="aspect-square flex items-center justify-center bg-gradient-to-br from-secondary/30 to-secondary/10">
-                  <p className="text-muted-foreground text-center px-4">
-                    📷 Imagem será exibida aqui
-                  </p>
-                  {/* Quando você tiver a imagem, substitua o placeholder acima por:
+                <div className="aspect-square">
                   <img 
-                    src={suaImagem} 
+                    src={laveSequeImage} 
                     alt="Lave e Seque suas roupas" 
                     className="w-full h-full object-cover"
                   />
-                  */}
                 </div>
               </div>
             </div>
@@ -164,72 +160,72 @@ const Plans = () => {
               <Card className="border-none shadow-lg bg-secondary/50">
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🧺</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">🧺</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Limite da máquina em média de até 20 a 30 peças.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">💲</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">💲</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Valores: 72,00 reais o cesto (Lavar e Seca)
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">💧</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">💧</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Máquinas de alta tecnologia que não encolhem as roupas.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🫧</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">🫧</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Produtos hipoalergênicos e que não danificam as roupas.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">💦</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">💦</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Máquinas higienizadas a cada ciclo.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">⏰</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">⏰</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Roupas prontas em 70 minutos.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">😀</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">😀</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Um preço justo para quem precisa de tempo livre !
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <span className="text-2xl">🚗</span>
-                      <div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl flex-shrink-0 w-8 text-center">🚗</span>
+                      <div className="flex-1">
                         <p className="text-lg font-semibold text-foreground">
                           Delivery Grátis por agendamento
                         </p>
