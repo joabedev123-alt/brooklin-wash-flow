@@ -1,4 +1,4 @@
-import { Calendar, CreditCard, Shirt, Truck } from "lucide-react";
+import { Calendar, CreditCard, Shirt } from "lucide-react";
 
 const steps = [
   {
@@ -16,11 +16,6 @@ const steps = [
     title: "Agende e realize o pagamento",
     description: "Escolha o melhor dia e horário pelo site ou WhatsApp e pague online, sem complicação. A coleta é rápida e segura.",
   },
-  {
-    icon: Truck,
-    title: "Receba tudo de volta, limpo e cheiroso",
-    description: "Suas roupas, sapatos e tecidos são lavados, passados e entregues na sua casa com o padrão de qualidade Brooklin.",
-  },
 ];
 
 const HowItWorks = () => {
@@ -33,7 +28,7 @@ const HowItWorks = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {steps.map((step, index) => (
             <article
               key={index}
