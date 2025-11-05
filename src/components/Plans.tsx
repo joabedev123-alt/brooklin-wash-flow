@@ -79,7 +79,7 @@ const services = [
     image: blackoutImage2,
     alt: "Tapetes Grandes, Couro e Camurça",
     title: "Tapetes Grandes, Couro e Camurça",
-    subtitle: "Cuidado técnico para tecidos delicados e de alto valor",
+    subtitle: "Limpeza profunda e tratamento especializado para cada tipo de material.",
     description: "Realizamos a lavagem e higienização profissional de tapetes grandes, peças de couro e camurça, com processos seguros que preservam textura, cor e maciez.\n\nRemovemos poeira, manchas e odores com produtos específicos e secagem controlada, garantindo resultados duradouros e acabamento premium.",
   },
 ];
