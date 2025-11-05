@@ -73,7 +73,7 @@ const services = [
     alt: "Blackout, Lã, Seda e Peças com Enchimento",
     title: "Blackout, Lã, Seda e Peças com Enchimento",
     subtitle: "Cuidado técnico para tecidos delicados e de alto valor.",
-    description: "Realizamos a lavagem especializada de cortinas blackout, cobertores de lã, roupas de seda e peças com enchimento, utilizando processos controlados e produtos adequados para preservar textura, brilho e volume.\nCada item recebe tratamento individual, garantindo durabilidade e acabamento impecável.",
+    description: "Realizamos a lavagem especializada de cortinas blackout, cobertores de lã, roupas de seda e peças com enchimento, utilizando processos controlados e produtos adequados para preservar textura, brilho e volume.\n\nCada item recebe tratamento individual, garantindo durabilidade e acabamento impecável.",
   },
   {
     image: blackoutImage2,
