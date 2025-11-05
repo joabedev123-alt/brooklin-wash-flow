@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "Marina Costa",
     location: "Moema",
-    text: "Excelente custo-benefício! Além de economizar tempo, ainda pago menos do que gastava na lavanderia tradicional. O atendimento é super atencioso e resolvem tudo pelo app.",
+    text: "Excelente custo-benefício! Além de economizar tempo, ainda pago menos do que gastava na lavanderia tradicional. O atendimento é super atencioso e resolvem tudo no WhatsApp.",
     rating: 5,
   },
 ];

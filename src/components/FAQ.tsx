@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "Como funciona o sistema de assinatura da Brooklin Lavanderia?",
-    answer: "Você escolhe um plano mensal que se ajusta à sua necessidade, agenda as coletas pelo site ou app, e nós cuidamos de tudo: coletamos suas roupas, lavamos com cuidado e devolvemos limpas e passadas na sua casa.",
+    answer: "Você escolhe um plano mensal que se ajusta à sua necessidade, fale no WhatsApp, e nós cuidamos de tudo: coletamos suas roupas, lavamos com cuidado e devolvemos limpas e passadas na sua casa.",
   },
   {
     question: "Quais são as modalidades de serviço disponíveis?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Como funciona a coleta e entrega?",
-    answer: "Você agenda a coleta pelo site ou aplicativo, separamos suas roupas em sacos (de preferência por cor ou tipo), e nosso time faz a coleta no endereço cadastrado. Após a lavagem, entregamos no mesmo local em data agendada.",
+    answer: "Fale no WhatsApp, separamos suas roupas em sacos (de preferência por cor ou tipo), e nosso time faz a coleta no endereço cadastrado. Após a lavagem, entregamos no mesmo local em data agendada.",
   },
   {
     question: "Qual é a taxa de cancelamento?",
