@@ -13,7 +13,7 @@ const HighTechWashing = () => {
           {/* Título */}
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-foreground via-secondary to-foreground bg-clip-text text-transparent mb-4 px-2">
-              Lavagem de alta tecnologia 😱EXCLUSIVA 😱para lavar seus tapetes
+              Lavagem de alta tecnologia EXCLUSIVA para lavar seus tapetes
             </h2>
           </div>
 
