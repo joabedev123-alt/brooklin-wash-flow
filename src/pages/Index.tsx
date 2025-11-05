@@ -7,6 +7,7 @@ import HighTechWashing from "@/components/HighTechWashing";
 import FAQ from "@/components/FAQ";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FAQ />
       <Testimonials />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };

@@ -70,17 +70,17 @@ const services = [
   },
   {
     image: blackoutImage,
-    alt: "Blackout, Lã, Seda e Peças com Enchimento",
-    title: "Blackout, Lã, Seda e Peças com Enchimento",
+    alt: "Tapetes Grandes, Couro e Camurça",
+    title: "Tapetes Grandes, Couro e Camurça",
     subtitle: "Cuidado técnico para tecidos delicados e de alto valor",
-    description: "Realizamos a lavagem especializada de cortinas blackout, cobertores de lã, roupas de seda e peças com enchimento, utilizando processos controlados e produtos adequados para preservar textura, brilho e volume.\nCada item recebe tratamento individual, garantindo durabilidade e acabamento impecável.",
+    description: "Realizamos a lavagem e higienização profissional de tapetes grandes, peças de couro e camurça, com processos seguros que preservam textura, cor e maciez.\n\nRemovemos poeira, manchas e odores com produtos específicos e secagem controlada, garantindo resultados duradouros e acabamento premium.",
   },
   {
     image: blackoutImage2,
-    alt: "Blackout, Lã, Seda e Peças com Enchimento",
-    title: "Blackout, Lã, Seda e Peças com Enchimento",
+    alt: "Tapetes Grandes, Couro e Camurça",
+    title: "Tapetes Grandes, Couro e Camurça",
     subtitle: "Cuidado técnico para tecidos delicados e de alto valor.",
-    description: "Realizamos a lavagem especializada de cortinas blackout, cobertores de lã, roupas de seda e peças com enchimento, utilizando processos controlados e produtos adequados para preservar textura, brilho e volume.\nCada item recebe tratamento individual, garantindo durabilidade e acabamento impecável.",
+    description: "Realizamos a lavagem e higienização profissional de tapetes grandes, peças de couro e camurça, com processos seguros que preservam textura, cor e maciez.\n\nRemovemos poeira, manchas e odores com produtos específicos e secagem controlada, garantindo resultados duradouros e acabamento premium.",
   },
 ];
 
