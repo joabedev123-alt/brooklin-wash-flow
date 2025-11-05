@@ -1,12 +1,10 @@
-import { Clock, Truck, CheckCircle2 } from "lucide-react";
+import { Clock, Truck, CheckCircle2, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-// Para adicionar um vídeo, importe o arquivo aqui e descomente a linha abaixo:
-// import videoSrc from "@/assets/seu-video-aqui.mp4";
+import { Button } from "@/components/ui/button";
+import videoSrc from "@/assets/WhatsApp Video 2025-11-04 at 18.31.24 (1).mp4";
 
 const HighTechWashing = () => {
-  // Defina esta variável quando tiver o vídeo:
-  const hasVideo = false; // Mude para true quando tiver o vídeo
+  const hasVideo = true;
 
   return (
     <section id="lavagem-alta-tecnologia" className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/30">
@@ -26,7 +24,7 @@ const HighTechWashing = () => {
                 <div className="aspect-video flex items-center justify-center">
                   {hasVideo ? (
                     <video
-                      // src={videoSrc}
+                      src={videoSrc}
                       controls
                       className="w-full h-full object-cover"
                       playsInline
@@ -100,6 +98,18 @@ const HighTechWashing = () => {
                     </div>
                   </CardContent>
                 </Card>
+              </div>
+
+              {/* Botão WhatsApp */}
+              <div className="mt-8">
+                <Button
+                  onClick={() => window.open("https://wa.me/551155314546", "_blank")}
+                  className="w-full md:w-auto bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold py-6 px-8 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3"
+                  size="lg"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  Solicitar orçamento Grátis
+                </Button>
               </div>
             </div>
           </div>
